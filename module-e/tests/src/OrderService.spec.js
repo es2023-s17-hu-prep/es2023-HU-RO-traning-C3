@@ -1,7 +1,11 @@
 const OrderService = require("./OrderService");
 
 jest.mock("./UserService", () => ({
-    getUserById: jest.fn((userId) => ({ id: userId }))
+    getUserById: jest.fn((userId) => {
+        if (userId === -1)
+            return null;
+        return { id: userId }
+    })
 }));
 
 const discount = 75;
@@ -32,5 +36,17 @@ describe("OrderService", () => {
         expect(order.discountedAmount).toBe(totalAmount * (1 - discount / 100));
 
         expect(OrderService.getUserOrders(userId)).toStrictEqual([order]);
+    });
+
+    it("should throw exception if the user doesn't exist", () => {
+        const items = [
+            { price: Math.random() * 500 },
+            { price: Math.random() * 500 },
+            { price: Math.random() * 500 },
+            { price: Math.random() * 500 }
+        ];
+
+        expect(() => OrderService.placeOrder(-1, items))
+            .toThrow("User not found");
     });
 });
