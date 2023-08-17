@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1692261131683" clover="3.2.0">
-  <project timestamp="1692261131683" name="All files">
+<coverage generated="1692263863864" clover="3.2.0">
+  <project timestamp="1692263863864" name="All files">
     <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="4" methods="13" coveredmethods="13" elements="42" coveredelements="42" complexity="0" loc="25" ncloc="25" packages="1" files="3" classes="3"/>
     <file name="DiscountService.js" path="D:\es2023-HU-RO-traning-C3\module-e\tests\src\DiscountService.js">
       <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
@@ -33,7 +33,7 @@
       <line num="7" count="2" type="stmt"/>
       <line num="8" count="2" type="stmt"/>
       <line num="9" count="2" type="stmt"/>
-      <line num="13" count="6" type="stmt"/>
+      <line num="13" count="8" type="stmt"/>
       <line num="16" count="1" type="stmt"/>
     </file>
   </project>
