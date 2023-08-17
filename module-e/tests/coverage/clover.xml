@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1692261131683" clover="3.2.0">
+  <project timestamp="1692261131683" name="All files">
+    <metrics statements="25" coveredstatements="25" conditionals="4" coveredconditionals="4" methods="13" coveredmethods="13" elements="42" coveredelements="42" complexity="0" loc="25" ncloc="25" packages="1" files="3" classes="3"/>
+    <file name="DiscountService.js" path="D:\es2023-HU-RO-traning-C3\module-e\tests\src\DiscountService.js">
+      <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="11" count="8" type="stmt"/>
+      <line num="12" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="1" type="stmt"/>
+    </file>
+    <file name="OrderService.js" path="D:\es2023-HU-RO-traning-C3\module-e\tests\src\OrderService.js">
+      <metrics statements="14" coveredstatements="14" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+    </file>
+    <file name="UserService.js" path="D:\es2023-HU-RO-traning-C3\module-e\tests\src\UserService.js">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="13" count="6" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

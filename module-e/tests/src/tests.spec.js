@@ -47,7 +47,9 @@ describe("UserService", function () {
         id: 1,
       });
     });
+  });
 
+  describe("getUserById", () => {
     it("retrieves the right user based on the id", function () {
       expect(userService.getUserById(1)).toStrictEqual({
         name: "John",
@@ -59,10 +61,10 @@ describe("UserService", function () {
         id: 2,
       });
     });
-  });
-
-  describe("getUserById", () => {
-    it("retrieves the right user based on the id", function () {});
+    
+    it("returns nothing when the user is not found", function () {
+      expect(userService.getUserById(20)).toBe(undefined);
+    });
   });
 });
 
