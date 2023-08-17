@@ -64,6 +64,7 @@ class RestaurantCard extends HTMLElement {
             }
             
             .restaurant {
+              margin-bottom:3rem;
               display: flex;
               flex-direction: column;
               width: 25rem;
