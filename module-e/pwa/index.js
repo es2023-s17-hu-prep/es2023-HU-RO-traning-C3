@@ -1,15 +1,20 @@
+var items = document.querySelectorAll("restaurant-card");
+items.forEach((item) => {
+  item.addEventListener("click", function () {
+    alert("YO");
+    window.location = "/restaurant.html";
+  });
+});
+
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/sw.js");
   navigator.serviceWorker.ready.then((registration) => {
     if ("PushManager" in window) {
-      Notification.requestPermission().then((result) => {
-        if (result === "granted") {
-          randomNotification();
-        }
-      });
+      Notification.requestPermission().then((result) => {});
     }
   });
 }
+
 window.addEventListener("appinstalled", function (event) {
   notifyMe();
 });
@@ -21,7 +26,7 @@ function notifyMe() {
   } else if (Notification.permission === "granted") {
     // Check whether notification permissions have already been granted;
     // if so, create a notification
-    const notification = new Notification("Hi there!");
+    const notification = new Notification("Welcome, Mate!");
     // …
   } else if (Notification.permission !== "denied") {
     // We need to ask the user for permission
