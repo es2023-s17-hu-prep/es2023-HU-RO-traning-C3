@@ -1,11 +1,3 @@
-var items = document.querySelectorAll("restaurant-card");
-items.forEach((item) => {
-  item.addEventListener("click", function () {
-    alert("YO");
-    window.location = "/restaurant.html";
-  });
-});
-
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/sw.js");
   navigator.serviceWorker.ready.then((registration) => {

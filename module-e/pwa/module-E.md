@@ -31,7 +31,7 @@ The PWA should support offline functionality, push notifications, and seamless i
 - You will embark on a journey to design and develop a fully functional PWA that incorporates two critical components: push notifications and offline functionality. Not only will you need to grasp the fundamentals of service workers and caching strategies, you also need to explore the intricacies of integrating push notification services.
 - The PWA should be able to run offline, allowing users to access previously cached content and perform key actions even when they're not connected to the internet. Caching strategies should be wisely implemented to ensure optimal performance and minimal data usage.
 - Purpose of the DineEase PWA: To provide users with an on-the-go experience, allowing them quick access to restaurant listings and the ability to view menus, even when offline. Simplified Functionalities of the DineEasy PWA for a 1-hour task:
-    DONE (not really) 1. **Basic Restaurant Listings:**
+    1. **Basic Restaurant Listings:**
         - Display a list of three to five sample restaurants available on DineEasy.
         - Users can tap on a restaurant to see more details.
     2. **Offline Menus & Details:**
