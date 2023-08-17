@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./RestaurantCard.js"></script>
+    <link rel="stylesheet" href="index.css" />
+
+    <title>PWA :D</title>
+
+    <!-- PWA STUFF -->
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="./public/logo192.png" />
+    <link rel="manifest" href="./public/manifest.json" />
+  </head>
+  <body>
+    <div id="non-cached" style="display: none">
+      You are trying to fetch non-cached data.
+    </div>
+
+    <!-- RESTAURANTS USING THE WEB COMPONENTS -->
+    <div class="restaurants"></div>
+
+    <!-- RESTAURANT DETAIL -->
+    <dialog id="modal">
+      <div id="modal-id"></div>
+      <div id="menu-items"></div>
+      <button id="close-modal">Close modal</button>
+    </dialog>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      // fetch the restaurants
+      (async () => {
+        const res = await fetch("./data/restaurants.json");
+        const restaurants = (await res.json())
+          .map(
+            (x) => `
+            <restaurant-card
+                id="${x.restaurant_id}"
+                layout="horizontal"
+                title="${x.name}"
+                imageSrc="./public/restaurant.jpg"
+            >${x.description}</restaurant-card>`
+          )
+          .join("");
+        document.querySelector(".restaurants").innerHTML = restaurants;
+
+        // event hander for continue click
+        document.querySelectorAll("restaurant-card").forEach((card) =>
+          card.addEventListener("select", async (e) => {
+            const id = e.detail.id;
+            const restaurantTitle = e.target.attributes.title.value;
+
+            // fetch the menus
+            const menusRes = await fetch("./data/menus.json");
+            const menus = (await menusRes.json()).filter(
+              (x) => x.restaurant_id === Number(id)
+            );
+
+            document.getElementById("modal-id").innerText = restaurantTitle;
+            document.getElementById("menu-items").innerHTML = menus
+              .map((x) => `<div>${x.dish_name} - ${x.price} EUR</div>`)
+              .join("");
+            modal.showModal();
+          })
+        );
+      })();
+
+      // varaibles
+      const modal = document.getElementById("modal");
+
+      // register the service worker
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js");
+      }
+
+      // show notification when user installs
+      window.addEventListener("appinstalled", async () => {
+        const perm = await Notification.requestPermission();
+
+        // permission granted
+        if (perm === "granted") {
+          new Notification("Welcome!", {
+            body: "Welcome to the DineEase app!",
+            icon: "./public/logo192.png",
+            vibrate: [100, 200, 500, 200],
+          });
+        }
+      });
+
+      // close modal
+      document.getElementById("close-modal").onclick = () => modal.close();
+    </script>
+  </body>
+</html>
