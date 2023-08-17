@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1692260118994" clover="3.2.0">
+  <project timestamp="1692260118994" name="All files">
+    <metrics statements="16" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8" elements="26" coveredelements="26" complexity="0" loc="16" ncloc="16" packages="1" files="2" classes="2"/>
+    <file name="DiscountService.js" path="D:\dev\es2023-s17-prep\es2023-HU-RO-traning-C3\module-e\tests\src\DiscountService.js">
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="12" count="4" type="stmt"/>
+      <line num="13" count="4" type="stmt"/>
+      <line num="14" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="18" count="2" type="stmt"/>
+    </file>
+    <file name="UserService.js" path="D:\dev\es2023-s17-prep\es2023-HU-RO-traning-C3\module-e\tests\src\UserService.js">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="2" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
