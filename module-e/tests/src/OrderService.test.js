@@ -64,7 +64,7 @@ describe("OrderService tests", () => {
     UserService.getUserById.mockReturnValue({ id: 2, name: "Oliver" });
 
     // mock the getUserDiscount
-    DiscountService.getUserDiscount = jest.fn().mockReturnValue(0);
+    DiscountService.getUserDiscount.mockReturnValue(0);
 
     // random items
     const items = [
@@ -79,6 +79,30 @@ describe("OrderService tests", () => {
       items: items,
       totalAmount: 1100,
       discountedAmount: 1100,
+    });
+  });
+
+  // test whether the service can place an order
+  it("should place an order with discount", () => {
+    // mock the getUserById
+    UserService.getUserById.mockReturnValue({ id: 2, name: "Oliver" });
+
+    // mock the getUserDiscount
+    DiscountService.getUserDiscount.mockReturnValue(50);
+
+    // random items
+    const items = [
+      { name: "IPhone", price: 500 },
+      { name: "Android", price: 600 },
+    ];
+
+    const result = service.placeOrder(1, items);
+    expect(result).toEqual({
+      id: 4,
+      userId: 1,
+      items: items,
+      totalAmount: 1100,
+      discountedAmount: 550,
     });
   });
 });
