@@ -17,8 +17,8 @@ app.get("/restaurants", (req, res) => {
 });
 
 // get sectors
-app.get("/menus", (req, res) => {
-    res.send( menus );
+app.get("/menus/:id", (req, res) => {
+    res.send( menus.filter(m => m.restaurant_id == req.params.id) );
 });
 
 app.get("/offers", (req, res) => {
