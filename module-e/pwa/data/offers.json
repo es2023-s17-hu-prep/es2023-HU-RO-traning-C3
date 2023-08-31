@@ -1,0 +1,28 @@
+[
+    {"id": 1, "restaurant_id": 5, "offer": "50% discount for every meal after 8PM"},
+    {"id": 2, "restaurant_id": 1, "offer": "Free dessert with every entrée"},
+    {"id": 3, "restaurant_id": 14, "offer": "Kids eat free on Sundays"},
+    {"id": 4, "restaurant_id": 6, "offer": "Happy Hour: 2-for-1 drinks between 4PM and 6PM"},
+    {"id": 5, "restaurant_id": 2, "offer": "10% off for students"},
+    {"id": 6, "restaurant_id": 9, "offer": "Free glass of wine with dinner"},
+    {"id": 7, "restaurant_id": 8, "offer": "All-you-can-eat pierogi on Wednesdays"},
+    {"id": 8, "restaurant_id": 7, "offer": "20% off all vegetarian dishes"},
+    {"id": 9, "restaurant_id": 13, "offer": "Buy one main course, get one half off"},
+    {"id": 10, "restaurant_id": 12, "offer": "Free coffee with every breakfast purchase"},
+    {"id": 11, "restaurant_id": 10, "offer": "3-course dinner special for $25"},
+    {"id": 12, "restaurant_id": 4, "offer": "15% off for military personnel"},
+    {"id": 13, "restaurant_id": 3, "offer": "Free parking with a dinner reservation"},
+    {"id": 14, "restaurant_id": 11, "offer": "Two appetizers for the price of one on Mondays"},
+    {"id": 15, "restaurant_id": 15, "offer": "Complimentary bread basket"},
+    {"id": 16, "restaurant_id": 3, "offer": "Early bird special: 20% off between 5PM and 6PM"},
+    {"id": 17, "restaurant_id": 5, "offer": "Lunch special: Soup and sandwich combo for $10"},
+    {"id": 18, "restaurant_id": 1, "offer": "Loyalty program: 10th meal is free"},
+    {"id": 19, "restaurant_id": 6, "offer": "Senior discount: 10% off"},
+    {"id": 20, "restaurant_id": 7, "offer": "10% discount for large parties"},
+    {"id": 21, "restaurant_id": 12, "offer": "Free Wi-Fi for customers"},
+    {"id": 22, "restaurant_id": 9, "offer": "Ladies night: Free cocktail for women after 7PM"},
+    {"id": 23, "restaurant_id": 10, "offer": "Takeout special: Buy 2 pizzas, get 1 free"},
+    {"id": 24, "restaurant_id": 14, "offer": "Summer special: Free lemonade"},
+    {"id": 25, "restaurant_id": 13, "offer": "Anniversary special: 25% off your entire bill"}
+  ]
+  
