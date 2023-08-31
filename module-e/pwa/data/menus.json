@@ -1,0 +1,72 @@
+[
+  { "menu_id": 1, "restaurant_id": 1, "dish_name": "Goulash", "price": 10.99 },
+  {
+    "menu_id": 2,
+    "restaurant_id": 1,
+    "dish_name": "Chicken Paprikash",
+    "price": 11.99
+  },
+  {
+    "menu_id": 3,
+    "restaurant_id": 2,
+    "dish_name": "Mămăligă cu Brânză",
+    "price": 8.49
+  },
+  { "menu_id": 4, "restaurant_id": 2, "dish_name": "Sarmale", "price": 12.99 },
+  {
+    "menu_id": 5,
+    "restaurant_id": 3,
+    "dish_name": "Placki Ziemniaczane",
+    "price": 14.99
+  },
+  { "menu_id": 6, "restaurant_id": 3, "dish_name": "Bigos", "price": 9.99 },
+  {
+    "menu_id": 7,
+    "restaurant_id": 1,
+    "dish_name": "Fresh Grilled Fish",
+    "price": 17.99
+  },
+  {
+    "menu_id": 8,
+    "restaurant_id": 1,
+    "dish_name": "Octopus Salad",
+    "price": 13.49
+  },
+  {
+    "menu_id": 9,
+    "restaurant_id": 2,
+    "dish_name": "Pizza Margherita",
+    "price": 10.99
+  },
+  { "menu_id": 10, "restaurant_id": 3, "dish_name": "Tiramisu", "price": 6.99 },
+  {
+    "menu_id": 11,
+    "restaurant_id": 3,
+    "dish_name": "Beef Stew",
+    "price": 12.99
+  },
+  {
+    "menu_id": 12,
+    "restaurant_id": 3,
+    "dish_name": "Dobos Torte",
+    "price": 8.99
+  },
+  {
+    "menu_id": 13,
+    "restaurant_id": 1,
+    "dish_name": "Ciorbă de Burtă",
+    "price": 9.99
+  },
+  {
+    "menu_id": 14,
+    "restaurant_id": 2,
+    "dish_name": "Mămăligă cu Sarmale",
+    "price": 15.99
+  },
+  {
+    "menu_id": 15,
+    "restaurant_id": 3,
+    "dish_name": "Pierogi Ruskie",
+    "price": 10.99
+  }
+]

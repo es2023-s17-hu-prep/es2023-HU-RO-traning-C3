@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DineEase PWA</title>
+
+    <!-- PWA STUFF -->
+    <link rel="apple-touch-icon" href="./public/logo192.png" />
+    <link rel="manifest" href="./public/manifest.json" />
+
+    <!-- BASIC STYLES FOR THE PAGE -->
+    <style>
+      #restaurant-list {
+        width: 600px;
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+    </style>
+    <script src="./RestaurantCard.js"></script>
+  </head>
+  <body>
+    <div id="restaurant-list"></div>
+
+    <script>
+      // register the service worker
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("./sw.js");
+      }
+
+      const restaurantList = document.getElementById("restaurant-list");
+
+      // fetch the restaurants on page load
+      (async () => {
+        const res = await fetch("./data/restaurants.json");
+        restaurantList.innerHTML = (await res.json())
+          .map(
+            (restaurant) => `
+              <restaurant-card
+                id="${restaurant.id}"
+                layout="vertical"
+                title="${restaurant.name}"
+                imageSrc="./public/restaurant.jpg"
+              >
+                ${restaurant.description}
+              </restaurant-card>
+            `
+          )
+          .join("");
+      })();
+
+      // show the notification on app install
+      window.addEventListener("appinstalled", () => {
+        Notification.requestPermission().then((res) => {
+          if (res === "granted") {
+            new Notification("Welcome!", {
+              body: "Thanks for installing the DineEase PWA!",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

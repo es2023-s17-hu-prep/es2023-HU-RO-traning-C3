@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Szép Étterem",
+    "description": "A traditional Hungarian spot offering local delicacies and an authentic dining experience."
+  },
+  {
+    "id": 2,
+    "name": "La Piața",
+    "description": "Relish the taste of Romania with dishes that bring back memories of homemade meals."
+  },
+  {
+    "id": 3,
+    "name": "Gospoda Krakowska",
+    "description": "Indulge in classic Polish recipes in a quaint setting, reminiscent of Warsaw's charm."
+  }
+]
