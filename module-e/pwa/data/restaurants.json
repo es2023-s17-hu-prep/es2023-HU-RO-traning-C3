@@ -1,0 +1,107 @@
+[
+  {
+    "restaurant_id": 1,
+    "name": "Szép Étterem",
+    "location": "Budapest",
+    "cuisine": "Hungarian",
+    "description": "A traditional Hungarian spot offering local delicacies and an authentic dining experience."
+  },
+  {
+    "restaurant_id": 2,
+    "name": "La Piața",
+    "location": "Bucharest",
+    "cuisine": "Romanian",
+    "description": "Relish the taste of Romania with dishes that bring back memories of homemade meals."
+  },
+  {
+    "restaurant_id": 3,
+    "name": "Gospoda Krakowska",
+    "location": "Warsaw",
+    "cuisine": "Polish",
+    "description": "Indulge in classic Polish recipes in a quaint setting, reminiscent of Warsaw's charm."
+  },
+  {
+    "restaurant_id": 4,
+    "name": "Fisherman's Hut",
+    "location": "Budapest",
+    "cuisine": "Seafood",
+    "description": "A haven for seafood lovers, offering fresh catches in a delightful riverside setting."
+  },
+  {
+    "restaurant_id": 5,
+    "name": "Casa del Gusto",
+    "location": "Bucharest",
+    "cuisine": "Italian",
+    "description": "Relive the romance of Italy with dishes crafted with passion and flair."
+  },
+  {
+    "restaurant_id": 6,
+    "name": "Kék Duna Étterem",
+    "location": "Budapest",
+    "cuisine": "Hungarian",
+    "description": "Set on the banks of the Danube, enjoy meals that resonate with the city's heartbeat."
+  },
+  {
+    "restaurant_id": 7,
+    "name": "Brânza și Mămăligă",
+    "location": "Cluj-Napoca",
+    "cuisine": "Romanian",
+    "description": "A cozy spot that captures the essence of Transylvania, with dishes to match."
+  },
+  {
+    "restaurant_id": 8,
+    "name": "Czerwona Karczma",
+    "location": "Krakow",
+    "cuisine": "Polish",
+    "description": "Tucked away in Krakow, this eatery showcases Poland's culinary traditions."
+  },
+  {
+    "restaurant_id": 9,
+    "name": "Móló Rózsa Étterem",
+    "location": "Budapest",
+    "cuisine": "Seafood",
+    "description": "With a stunning view, indulge in seafood delicacies that tantalize the taste buds."
+  },
+  {
+    "restaurant_id": 10,
+    "name": "Trattoria Bella",
+    "location": "Varna",
+    "cuisine": "Italian",
+    "description": "Experience the beauty of Italian cuisine in a setting that complements every dish."
+  },
+  {
+    "restaurant_id": 11,
+    "name": "Paradicsom Étterem",
+    "location": "Szeged",
+    "cuisine": "Hungarian",
+    "description": "Take a culinary journey through Hungary's diverse and flavorful heritage."
+  },
+  {
+    "restaurant_id": 12,
+    "name": "Sarmale Bistro",
+    "location": "Timisoara",
+    "cuisine": "Romanian",
+    "description": "From sarmale to mămăligă, experience Romania's heart and soul."
+  },
+  {
+    "restaurant_id": 13,
+    "name": "Smaczne Pierogi",
+    "location": "Wroclaw",
+    "cuisine": "Polish",
+    "description": "Home to Poland's favorites, every bite is a reminder of traditional Polish hospitality."
+  },
+  {
+    "restaurant_id": 14,
+    "name": "Halász Fogadó",
+    "location": "Székesfehérvár",
+    "cuisine": "Seafood",
+    "description": "A delightful seafood haven where every dish tells a story of the sea."
+  },
+  {
+    "restaurant_id": 15,
+    "name": "Vivace Ristorante",
+    "location": "Bucharest",
+    "cuisine": "Italian",
+    "description": "Savor Italy's finest dishes in an ambiance that's as vibrant as its food."
+  }
+]
